@@ -1,10 +1,10 @@
 package generator
 
 import (
-	"github.com/lfkeitel/spartan/config"
-	"github.com/lfkeitel/spartan/event"
-	"github.com/lfkeitel/spartan/inputs"
-	"github.com/lfkeitel/spartan/utils"
+	"github.com/spartanlogs/spartan/config"
+	"github.com/spartanlogs/spartan/event"
+	"github.com/spartanlogs/spartan/inputs"
+	"github.com/spartanlogs/spartan/utils"
 	"gopkg.in/tomb.v2"
 )
 
