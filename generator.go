@@ -48,7 +48,9 @@ func newGeneratorInput(options utils.InterfaceMap) (inputs.Input, error) {
 }
 
 func (i *GeneratorInput) setConfig(options utils.InterfaceMap) error {
-	if err := config.VerifySettings(options, generatorConfigSchema); err != nil {
+	var err error
+	options, err = config.VerifySettings(options, generatorConfigSchema)
+	if err != nil {
 		return err
 	}
 
