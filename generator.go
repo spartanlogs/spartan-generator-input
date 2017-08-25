@@ -35,6 +35,7 @@ var generatorConfigSchema = []config.Setting{
 }
 
 type GeneratorInput struct {
+	inputs.BaseInput
 	config *generatorConfig
 	t      tomb.Tomb
 	out    chan<- *event.Event
